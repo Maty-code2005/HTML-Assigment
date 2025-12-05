@@ -1,0 +1,486 @@
+
+body {
+    margin: 0;
+    background: #000;
+    color: #fff;
+    position: relative;
+    min-height: 100vh;
+}
+
+/* Fullscreen star layer */
+.starfield {
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+/* Individual stars */
+.star {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    background: #fff;
+    box-shadow: 0 0 4px currentColor;
+    animation: twinkle 2s ease-in-out infinite;
+}
+
+@keyframes twinkle {
+    0%, 100% { opacity: 0.2; transform: scale(1); }
+    50%      { opacity: 1;   transform: scale(1.5); }
+}
+
+        
+
+
+
+
+        /* NAVIGATION BAR */
+nav {
+            background-color: #000000;
+            padding: 15px 30px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: white;
+            font-family: 'Oxanium', sans-serif;
+}
+.logo {
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+.nav-links {
+            display: flex;
+            gap: 25px;
+        }
+
+.nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            transition: 0.2s;
+        }
+
+        .nav-links a:hover {
+            color: #ffca28;
+            background-color: aliceblue;
+        }
+
+        h1, p {
+            color: white;
+            text-align: center;
+        }
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #121c86;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #362f70;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: #000000;
+  color: white;
+  padding: 20px;
+}
+
+
+.neon-frame {
+    position: relative;
+    display: inline-block;
+    padding: 18px 32px;
+    margin: 80px auto;
+    border-radius: 14px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+.neon-frame::before {
+    content: "";
+    position: absolute;
+    inset: -3px; 
+    border-radius: 14px;
+    background: linear-gradient(
+        90deg,
+        #3cf4ff,
+        #ff4fd8,
+        #3cf4ff,
+        #3cf4ff
+    );
+    background-size: 300% 100%;
+    animation: border-move 4s linear infinite;
+    filter: drop-shadow(0 0 8px #3cf4ff);
+    z-index: -2;
+}
+
+
+.neon-frame::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 12px;
+    background: #02030f;
+    box-shadow: 0 0 20px rgba(60, 244, 255, 0.3);
+    z-index: -1;
+}
+
+
+.neon-title {
+    margin: 0;
+    text-align: left;
+    line-height: 1.1;
+}
+
+
+.neon-title .line1 {
+    display: block;
+    font-size: 90px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    font-family: 'Oxanium', sans-serif;
+    color: #ff4fd8;
+    text-shadow:
+        0 0 6px rgba(255, 79, 216, 0.9),
+        0 0 14px rgba(255, 79, 216, 0.8);
+}
+
+
+.neon-title .line2 {
+    display: block;
+    margin-top: 4px;
+    font-size: 90px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #3cf4ff;
+    font-family: 'Oxanium', sans-serif;
+    text-shadow:
+        0 0 6px rgba(60, 244, 255, 0.9),
+        0 0 14px rgba(60, 244, 255, 0.8);
+}
+
+
+@keyframes border-move {
+    0%   { background-position: 0% 50%; }
+    100% { background-position: 300% 50%; }
+}
+
+.center-text {
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    text-decoration: underline;
+    font-family: 'Oxanium', sans-serif;
+}
+
+.purple-text {
+    color: #a020f0;
+}
+.blue-text {
+    color: #1e90ff;
+}
+
+.cosmic-title {
+    position: center;
+    display: inline-block;
+    text-align: center;
+    padding: 10px 20px;
+
+    /* Text gradient */
+    background: linear-gradient(90deg, #e8c17d, #d38ac1, #c86dff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 48px;
+    font-weight: 600;
+    font-style: italic;
+
+}
+
+/* Underline glow bar */
+.cosmic-title::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, #e8c17d, #d38ac1, #c86dff);
+    border-radius: 2px;
+    box-shadow: 0 0 15px #c86dff;
+}
+
+.title-wrapper {
+    text-align: center;
+}
+
+/* Layout for the 3 cards */
+.console-cards {
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 0 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 40px;
+
+  /* keep them in one row on wide screens */
+  flex-wrap: nowrap;
+}
+
+/* Base card style */
+.console-card {
+  flex: 1 1 0;
+  max-width: 360px;
+
+  background: #050509;
+  border-radius: 22px;
+  padding: 30px 28px;
+  color: #ffffff;
+  font-family: "Poppins", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  position: relative;
+
+  /* base glow + bounce transition */
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+/* Hover bounce + stronger glow */
+.console-card:hover {
+  transform: translateY(-14px) scale(1.02);
+}
+
+/* Common glowing edge using ::before */
+.console-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 2px;
+  background: transparent;
+  pointer-events: none;
+  -webkit-mask:
+    linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+          mask-composite: exclude;
+}
+
+/* Card-specific colours + lighting */
+.magnavox-card {
+  border: 2px solid #ffffff;
+  box-shadow: 0 0 18px rgba(255, 255, 255, 0.35);
+}
+.magnavox-card::before {
+  background: linear-gradient(180deg, #ffffff, rgba(255,255,255,0.1));
+}
+.magnavox-card:hover {
+  box-shadow: 0 0 35px rgba(255, 255, 255, 0.6);
+}
+
+.ps-card {
+  border: 2px solid #ff3030;
+  box-shadow: 0 0 18px rgba(255, 48, 48, 0.45);
+}
+.ps-card::before {
+  background: linear-gradient(180deg, #ff4b4b, rgba(255, 0, 0, 0.1));
+}
+.ps-card:hover {
+  box-shadow: 0 0 40px rgba(255, 48, 48, 0.75);
+}
+
+.sega-card {
+  border: 2px solid #00a2ff;
+  box-shadow: 0 0 18px rgba(0, 162, 255, 0.5);
+}
+.sega-card::before {
+  background: linear-gradient(180deg, #00a2ff, rgba(0, 162, 255, 0.1));
+}
+.sega-card:hover {
+  box-shadow: 0 0 40px rgba(0, 162, 255, 0.8);
+}
+
+/* Logo at the top of each card */
+.console-logo {
+  text-align: center;
+  margin-bottom: 24px;
+}
+.console-logo img {
+  max-width: 180px;
+  height: auto;
+}
+
+/* Text styles */
+.console-text {
+  text-align: center;
+}
+.console-text h3 {
+  margin: 0 0 8px;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+.console-text p {
+  margin: 4px 0 10px;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* Per-card text colour tweaks */
+.magnavox-card .console-text { color: #ffffff; }
+
+.ps-card .console-text { color: #ff4a4a; }
+.ps-card .console-text strong { color: #ffd54a; }
+
+.sega-card .console-text { color: #5bc5ff; }
+
+/* Stack vertically on smaller screens */
+@media (max-width: 1024px) {
+  .console-cards {
+    flex-wrap: wrap;
+  }
+  .console-card {
+    max-width: 420px;
+  }
+}
+
+.card-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;          /* makes entire area clickable */
+}
+
+.card-link:hover .console-card {
+    transform: translateY(-14px) scale(1.02); /* bounce still works */
+}
+
+
+.cosmic-title2 {
+    position: center;
+    display: inline-block;
+    text-align: center;
+    padding: 10px 20px;
+
+    /* Text gradient */
+    background: linear-gradient(90deg, #e8c17d, lightgreen, lightblue);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 48px;
+    font-weight: 600;
+    font-style: italic;
+    font-family: 'Oxanium', sans-serif;
+
+}
+
+/* Underline glow bar */
+.cosmic-title2::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, #e8c17d, #d38ac1, #c86dff);
+    border-radius: 2px;
+    box-shadow: 0 0 15px #c86dff;
+}
+
+/* Container for the two fact cards */
+.fact-cards {
+  max-width: 900px;
+  margin: 80px auto 0;
+  padding: 0 20px;
+
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  flex-wrap: nowrap;   /* keep them on one line on large screens */
+}
+
+/* Each card */
+.fact-card {
+  text-align: center;
+  color: #ffffff;
+  font-family: "Poppins", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  max-width: 340px;
+}
+
+/* Image frame with glow */
+.fact-image-frame {
+  display: inline-block;
+  padding: 10px;
+  border-radius: 12px;
+  background: #050509;
+  box-shadow: 0 0 22px rgba(0, 0, 0, 0.9);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Purple glow for card 1 */
+.fact-card--purple .fact-image-frame {
+  border: 3px solid #7b4dff;
+  box-shadow: 0 0 25px rgba(123, 77, 255, 0.8);
+}
+
+/* Teal glow for card 2 */
+.fact-card--teal .fact-image-frame {
+  border: 3px solid #00f2ff;
+  box-shadow: 0 0 25px rgba(0, 242, 255, 0.8);
+}
+
+/* Hover bounce + stronger glow */
+.fact-card:hover .fact-image-frame {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 0 40px rgba(255, 255, 255, 0.8);
+}
+
+.fact-image-frame img {
+  display: block;
+  max-width: 220px;
+  height: auto;
+}
+
+/* Title + text under image */
+.fact-title {
+  margin: 20px 0 10px;
+  font-size: 20px;
+}
+
+.fact-body {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.7;
+  max-width: 320px;
+}
+
+/* Mobile: stack vertically */
+@media (max-width: 800px) {
+  .fact-cards {
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+}
+

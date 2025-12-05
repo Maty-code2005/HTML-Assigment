@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+    <link rel="stylesheet" href="mati.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+
+    <nav>
+        <div class="logo"><img src="logo.png" alt="Logo" width="100px"></div>
+
+        <div class="nav-links">
+            <a href="mati.html">Home</a>
+            <a href="contact.html">Contact</a>
+            <a href="about.html">About</a>
+        </div>
+    </nav>
+
+    <header>
+    <div class="neon-frame">
+    <h1 class="neon-title">
+        <span class="line1">DIGITAL</span>
+        <span class="line2">NOSTALGIA</span>
+    </h1>
+    </div>
+        
+        <div style="text-align: center; margin-top: 0px;">
+    <a href="about.html" style="display: inline-block; transition: transform 0.25s ease;">
+        <img src="start.jpg" 
+             alt="Start Image"
+             width="300px"
+             style="border-radius: 12px; cursor: pointer; transition: transform 0.25s ease;">
+    </a>
+</div>
+
+<script>
+    // Cute little hover animation
+    const img = document.querySelector('a img');
+    img.addEventListener('mouseover', () => {
+        img.style.transform = 'scale(1.07)';
+    });
+    img.addEventListener('mouseout', () => {
+        img.style.transform = 'scale(1)';
+    });
+</script>
+
+    </header>
+
+</body>
+
+</html>
