@@ -19,13 +19,33 @@ start.jpg, logo.png → UI elements
 3. Use the navigation bar to move between pages.
 
 ## Reflection
-For this project, I first created my own prototypes in Odoo.com. My prototypes were very complex, with many colours, images, moving elements and detailed card layouts. They looked visually exciting, but once I started planning the actual website, I realised that building something that complex with only HTML5 and CSS would not be realistic. This pushed me to think about what the essential parts of my design were, and how I could simplify them without losing the theme of “Digital Nostalgia.”
+This project allowed me to explore the full process of designing and building a website using semantic HTML5 and CSS. I began by creating my own low-fidelity prototypes, inspired by the colourful style of retro gaming interfaces. These early sketches were intentionally ambitious: they included neon effects, animated elements, card layouts, large hero sections, and multiple visual highlights. At the start, my goal was to capture the vibrant personality of “Digital Nostalgia,” but I soon realised that my prototypes were far more complex than what could be realistically built within the limits of this assignment.
 
-Using my prototypes, I made low-fidelity sketches that focused on layout rather than decoration. The main ideas I kept were: a strong hero section, historical console cards, and a clear visual theme. However, the final website looks different from the prototype in several ways. The prototype had many decorative elements, while the finished website uses cleaner sections, more readable text, and a more consistent neon style. Instead of trying to copy every visual detail, I translated the feeling of the prototype—retro, colourful, playful—into something achievable with semantic HTML and CSS.
+Because of this, the production process became an exercise in simplification and translation. I needed to take a visually dense prototype and break it down into components that could be created using only HTML and CSS. I focused first on structure: defining sections, text hierarchy, navigation, and content order. I paid attention to semantic markup, ensuring that elements such as <header>, <nav>, <main>, <section>, and <footer> were used meaningfully. Once the structure was in place, I gradually added styling and effects that supported the theme without overwhelming the layout.
 
-The final website includes several features inspired by the prototypes, such as glowing borders, neon titles, the START button, and themed cards for Magnavox, PlayStation, and Sega. I also added a moving pixel-star background to make the site feel more dynamic. These choices helped me capture the atmosphere of my original design while keeping the code simple and functional.
+Throughout development, I worked iteratively. Each time I implemented part of the design, I compared it with the prototype and asked myself whether it improved clarity, supported usability, or enhanced the retro feel. Some ideas from the prototype—such as heavy colour gradients or multiple animated elements—were reduced or removed because they affected readability or made the page feel crowded. Other ideas, like glowing borders, neon typography, and themed cards for historical consoles, translated well into CSS and became defining features of the final site.
 
-During development, I focused on clean structure, accessibility, and separation of content from presentation. I used semantic elements, CSS selectors, flexbox layout, and commented code to explain each section. I also validated my HTML to make sure it met W3C standards.
+I also engaged with good coding practices during the build. I validated my HTML using W3C tools, commented my CSS to explain technical decisions, and checked colour contrast for accessibility. Flexbox allowed me to organise the layout more cleanly, and careful use of selectors helped keep the stylesheet structured and readable.
 
-Overall, this project taught me how to take a complex design idea, simplify it, and turn it into a working website that still expresses the creative vision of my prototype.
+Overall, this project taught me how to move from concept to implementation in a realistic way. I learnt that strong design is not about copying an ambitious prototype exactly, but about understanding the most important ideas and shaping them into a final product that is functional, readable, and visually engaging.
+## Comparison Between Prototype and Final Website
+My original prototypes were highly decorative and visually dense, with many bright colours, scattered effects, and complex layouts. They were designed to look exciting and playful, reflecting the energy of retro video games. However, the complexity made them difficult to reproduce using only HTML and CSS.
+
+In contrast, the final website keeps the theme of the prototype but simplifies the execution. The neon style, glowing text, and retro atmosphere remain, but they are now presented in a cleaner and more structured way. The card sections for Magnavox, PlayStation, and Sega became more readable and uniform compared to the prototypes. Similarly, the final hero section uses fewer overlapping elements, which improves clarity and accessibility.
+
+The prototype featured many decorative stars and scattered lights, while the final site includes a subtle animated pixel background that captures the same idea but is easier to manage. Colour choices also became more consistent: instead of many competing colours, the final design focuses on a palette of neon blues, pinks, and purples.
+
+Overall, the final site is less visually chaotic, more readable, more accessible, and better aligned with the technical limitations of the assignment, while still keeping the nostalgic aesthetic of the original prototypes.
+
+## Resources that I found helpful while creating the website
+W3Schools – HTML, CSS, and JavaScript Tutorials
+https://www.w3schools.com
+Provided clear explanations and code examples for structuring web pages, styling layouts, and adding interactivity. Helpful for learning responsive design techniques.
+MDN Web Docs (Mozilla Developer Network)
+https://developer.mozilla.org
+Offered in-depth documentation on HTML elements, CSS properties, and accessibility best practices. Used as a reliable reference when coding.
+Canva – Graphic Design Tool
+https://www.canva.com
+Used to design custom graphics and banners for the website, ensuring a consistent and appealing visual style.
+
 
