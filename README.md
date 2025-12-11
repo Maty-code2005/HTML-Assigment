@@ -18,7 +18,8 @@ start.jpg, logo.png → UI elements
 2. Open *mati.html* in any browser.
 3. Use the navigation bar to move between pages.
 
-# Reflection: For this project, I first created my own prototypes in Odoo.com. My prototypes were very complex, with many colours, images, moving elements and detailed card layouts. They looked visually exciting, but once I started planning the actual website, I realised that building something that complex with only HTML5 and CSS would not be realistic. This pushed me to think about what the essential parts of my design were, and how I could simplify them without losing the theme of “Digital Nostalgia.”
+## Reflection
+For this project, I first created my own prototypes in Odoo.com. My prototypes were very complex, with many colours, images, moving elements and detailed card layouts. They looked visually exciting, but once I started planning the actual website, I realised that building something that complex with only HTML5 and CSS would not be realistic. This pushed me to think about what the essential parts of my design were, and how I could simplify them without losing the theme of “Digital Nostalgia.”
 
 Using my prototypes, I made low-fidelity sketches that focused on layout rather than decoration. The main ideas I kept were: a strong hero section, historical console cards, and a clear visual theme. However, the final website looks different from the prototype in several ways. The prototype had many decorative elements, while the finished website uses cleaner sections, more readable text, and a more consistent neon style. Instead of trying to copy every visual detail, I translated the feeling of the prototype—retro, colourful, playful—into something achievable with semantic HTML and CSS.
 
