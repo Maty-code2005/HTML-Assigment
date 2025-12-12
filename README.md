@@ -32,11 +32,13 @@ Overall, this project taught me how to move from concept to implementation in a 
 My original prototypes were highly decorative and visually dense, with many bright colours, scattered effects, and complex layouts. They were designed, as shown below, to look exciting and playful, reflecting the energy of retro video games. However, the complexity made them difficult to reproduce using only HTML and CSS.
 ![Prototype for homw page](./prototype_1.png)
 ![Prototype for history page](./prototype_2.png)
-In contrast, the final website keeps the theme of the prototype but simplifies the execution. The neon style, glowing text, and retro atmosphere remain, but they are now presented in a cleaner and more structured way. The card sections for Magnavox, PlayStation, and Sega became more readable and uniform compared to the prototypes. Similarly, the final hero section uses fewer overlapping elements, which improves clarity and accessibility.
+In contrast, the final website, shown as bottom, keeps the theme of the prototype but simplifies the execution. The neon style, glowing text, and retro atmosphere remain, but they are now presented in a cleaner and more structured way. The card sections for Magnavox, PlayStation, and Sega became more readable and uniform compared to the prototypes. Similarly, the final hero section uses fewer overlapping elements, which improves clarity and accessibility.
 
 The prototype featured many decorative stars and scattered lights, while the final site includes a subtle animated pixel background that captures the same idea but is easier to manage. Colour choices also became more consistent: instead of many competing colours, the final design focuses on a palette of neon blues, pinks, and purples.
 
 Overall, the final site is less visually chaotic, more readable, more accessible, and better aligned with the technical limitations of the assignment, while still keeping the nostalgic aesthetic of the original prototypes.
+![Final for fact page](./final_1.png)
+![Final for characters page](./final_2.png)
 
 ## Resources that I found helpful while creating the website
 W3Schools – HTML, CSS, and JavaScript Tutorials
