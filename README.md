@@ -40,7 +40,7 @@ Overall, the final site is less visually chaotic, more readable, more accessible
 ![Final for fact page](./final_1.png)
 ![Final for characters page](./final_2.png)
 
-##Discussion on CSS Techniques: Interactive Image Effect
+## Discussion on CSS Techniques: Interactive Image Effect
 
 The interactive visual effects on my webpage are implemented entirely through CSS, using layered positioning, animations, and hover-based transformations. The animated starfield background is created by placing a .starfield container behind all content (z-index: -1) and randomly positioning multiple .star elements inside it. Each star uses a twinkle keyframe animation that changes opacity and scale, creating a dynamic cosmic environment without JavaScript.
 
