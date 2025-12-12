@@ -40,6 +40,13 @@ Overall, the final site is less visually chaotic, more readable, more accessible
 ![Final for fact page](./final_1.png)
 ![Final for characters page](./final_2.png)
 
+##Discussion on CSS Techniques: Interactive Image Effect
+
+The interactive visual effects on my webpage are implemented entirely through CSS, using layered positioning, animations, and hover-based transformations. The animated starfield background is created by placing a .starfield container behind all content (z-index: -1) and randomly positioning multiple .star elements inside it. Each star uses a twinkle keyframe animation that changes opacity and scale, creating a dynamic cosmic environment without JavaScript.
+
+For interactive images, I designed card components such as .console-card and .fact-card with glowing borders generated through pseudo-elements (::before and ::after). The glow intensifies on hover, and the entire card lifts slightly using transform: translateY(-10px) scale(1.03). This gives the images a responsive, tactile feel. Shadows, gradients, and transitions work together to make the images appear interactive and alive.
+Overall, the effect demonstrates how modern CSS can create visually rich, interactive elements with smooth animations and no scripting.
+
 ## Resources that I found helpful while creating the website
 W3Schools – HTML, CSS, and JavaScript Tutorials
 https://www.w3schools.com
